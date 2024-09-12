@@ -1,0 +1,39 @@
+
+.products {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(15rem,25rem));
+    gap: 3rem;
+    justify-content: center;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: .5rem 1rem 1rem .5rem rgba(black, .2);
+}
+
+.avatar {
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el contenedor */
+    background-position: center;
+}
+
+.imagen {
+    height: 25rem;
+    padding: 0 1rem;
+}
+
+button {
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    background-color: aliceblue;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
